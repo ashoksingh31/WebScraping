@@ -13,7 +13,7 @@ The CoinMarketCap Data Scraper is a Python-based project that automates the proc
 
 ## Features
 
-- Dynamically extracts cryptocurrency data across multiple pages.
+- Dynamically extract cryptocurrency data across multiple pages.
 - Includes fields such as:
   - Coin name
   - Coin code
