@@ -2,6 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
+import pandas
 
 searchedJob = "python"
 url = f"https://wuzzuf.net/search/jobs?q={searchedJob}"

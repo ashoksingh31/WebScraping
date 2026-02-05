@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import os
+import pandas
 
 # Set up the Chrome driver
 os.environ['PATH'] += r"C:/SeleniumDrivers"
