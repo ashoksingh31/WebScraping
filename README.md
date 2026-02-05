@@ -1,3 +1,12 @@
+
+## Enhancements by <Ashok Kumar Singh>
+
+- Developed Python web scraper using Requests and BeautifulSoup
+- Extracted real-time job market data and exported to Excel (CSV)
+- Demonstrated data extraction, transformation, and automation
+- Prepared dataset for analytics and visualization (Power BI/Tableau)
+
+
 # Web Scraping Projects
 
 This repository contains a collection of websites that I have scraped for learning and experimentation purposes. The scraped data is organized into subfolders, where each subfolder corresponds to a specific website. These websites were scraped using different techniques, including Beautiful Soup (bs4) for static content, Selenium for dynamic content, and a mix of both for certain cases.
