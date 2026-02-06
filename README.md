@@ -41,6 +41,7 @@ Below is the list of websites classified by the scraping technique used:
 - [yallakora](https://www.yallakora.com/match-center/%d9%85%d8%b1%d9%83%d8%b2-%d8%a7%d9%84%d9%85%d8%a8%d8%a7%d8%b1%d9%8a%d8%a7%d8%aa#nav-menu)
 - [wuzzuf](https://wuzzuf.net/jobs/egypt)
 - [wikipedia](https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_United_States_by_revenue)
+- [quotes.toscrape](https://quotes.toscrape.com/)
 
 ### Selenium
 
@@ -67,7 +68,7 @@ Ensure you have Python installed, along with the necessary libraries. For Seleni
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/chouaib-629/WebScraping.git
+   git clone https://github.com/ashoksingh31/WebScraping.git
    ```
 
 2. Navigate to the desired subfolder to inspect the scraped data or associated scripts.
