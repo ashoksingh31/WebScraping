@@ -2,25 +2,23 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-url = "https://remoteok.com/remote-python-jobs"
-headers = {"User-Agent": "Mozilla/5.0"}
+url = "https://quotes.toscrape.com"
 
-response = requests.get(url, headers=headers)
+response = requests.get(url)
 soup = BeautifulSoup(response.text, "html.parser")
 
-jobs = []
+quotes = []
 
-for job in soup.find_all("tr", class_="job"):
-    title = job.find("h2")
-    company = job.find("h3")
+for quote in soup.find_all("div", class_="quote"):
+    text = quote.find("span", class_="text").get_text(strip=True)
+    author = quote.find("small", class_="author").get_text(strip=True)
 
-    if title and company:
-        jobs.append({
-            "title": title.text.strip(),
-            "company": company.text.strip()
-        })
+    quotes.append({
+        "quote": text,
+        "author": author
+    })
 
-df = pd.DataFrame(jobs)
-df.to_csv("python_jobs.csv", index=False)
+df = pd.DataFrame(quotes)
+df.to_csv("quotes.csv", index=False)
 
-print("Saved python_jobs.csv")
+print(f"Scraped {len(df)} quotes")
